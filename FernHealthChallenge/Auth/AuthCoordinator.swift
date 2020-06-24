@@ -26,8 +26,8 @@ final class AuthCoordinator: Coordinator {
     }
     
     func start() {
-        // This flow starts with the CodeValidatorViewController
-        showCodeValidator()
+        // This flow starts with the Code Authenticator Controller
+        showCodeAuth()
     }
     
     func finish() {
@@ -37,13 +37,8 @@ final class AuthCoordinator: Coordinator {
 
 extension AuthCoordinator {
     
-    private func showCodeValidator() {
-        // Use dependency injection to inject network routers for testing requests
-        // 1. Inject a URLSession to the network router
-        // 2. Inject the Network Router to the CodeAuthenticatorService
-        // 3. Injet the CodeAuthenticatorService to the CodeAuthViewController
-        let codeValidator = CodeAuthenticatorService(networkRouter: StatusCodeRouter(session: URLSession.shared))
-        let authViewController = CodeAuthViewController(codeValidator: codeValidator)
+    private func showCodeAuth() {
+        let authViewController = CodeAuthViewController()
         authViewController.delegate = self
         navigationController.show(authViewController, sender: self)
     }
@@ -54,13 +49,13 @@ extension AuthCoordinator: CodeAuthViewControllerDelegate {
     
     func didAuthenticateCode() {
         // After code has been validated, push to FeedbackViewController.
-        //By controlling the flow in the Coordinator, we enforce data encapsulation so view controller's don't know anything about each other
+        // By controlling the flow in the Coordinator, we enforce data encapsulation so view controller's don't know anything about each other
         let feedbackVC = FeedbackViewController()
         navigationController.pushViewController(feedbackVC, animated: true)
     }
     
     func didFailAuth() {
-        // Handle when auth failed
+        // Handle navigation when auth failed
     }
     
     

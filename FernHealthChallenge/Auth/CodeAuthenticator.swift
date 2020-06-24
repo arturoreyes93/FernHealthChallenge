@@ -17,22 +17,22 @@ protocol CodeAuthenticator {
     func authenticate(_ code: String) -> AnyPublisher<CodeValue?, Error>
 }
 
-/// Object responsible for authenticating the code following single responsibility principle
-struct CodeAuthenticatorService: CodeAuthenticator {
+/// Responsible for authenticating the code following single responsibility principles for optimum testing
+public struct CodeAuthenticatorService: CodeAuthenticator {
     
-    private let url: URL = URL(string: "https://apidev.fernhealth.com/client/validateCompanyCode")!
+    static let url: URL = URL(string: "https://apidev.fernhealth.com/client/validateCompanyCode")!
     
     private let networkRouter: NetworkRouter
     
     var codeLength: Int { return 6 }
     
-    init(networkRouter: NetworkRouter) {
+    init(networkRouter: NetworkRouter = StatusCodeRouter()) {
         self.networkRouter = networkRouter
     }
     
     func authenticate(_ code: String) -> AnyPublisher<CodeValue?, Error> {
         
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: CodeAuthenticatorService.url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
@@ -41,6 +41,7 @@ struct CodeAuthenticatorService: CodeAuthenticator {
             request.httpBody = jsonAsData
         } catch {
             print("json error: \(error.localizedDescription)")
+            return AnyPublisher<CodeValue?, Error>(Fail(error: error))
         }
         
         return networkRouter.request(request)

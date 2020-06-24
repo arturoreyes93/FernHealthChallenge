@@ -38,7 +38,7 @@ extension AppCoordinator {
     }
     
     private func showMainFlow() {
-        // Move to App's main flow
+        // Move to App's main flow when auth has been successful
     }
 }
 

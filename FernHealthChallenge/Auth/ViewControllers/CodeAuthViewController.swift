@@ -99,7 +99,6 @@ final class CodeAuthViewController: UIViewController {
     private let leftBubble: UIImageView = {
         let image = UIImageView(image: UIImage(named: "left_bubble"))
         image.tintColor = .bubbleGreen
-        //image.alpha = 0.1
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -113,7 +112,7 @@ final class CodeAuthViewController: UIViewController {
     private var codeSubscriber     : AnyCancellable?
     
     // MARK: Init methods
-    init(codeValidator: CodeAuthenticator) {
+    init(codeValidator: CodeAuthenticator = CodeAuthenticatorService()) {
         self.viewModel = CodeAuthViewModel(codeValidator: codeValidator)
         self.codeStackView = CodeStackView(codeLength: codeValidator.codeLength, labelWidth: 40)
         super.init(nibName: nil, bundle: nil)
@@ -228,7 +227,7 @@ final class CodeAuthViewController: UIViewController {
         // Actions to perform when the user types in a new character
         codeSubscriber = viewModel.$code.receive(on: DispatchQueue.main).sink { [weak self] code in
             guard let self = self else { return }
-            let isComplete = code.count == self.viewModel.codeValidator.codeLength
+            let isComplete = code.count == self.viewModel.codeAuthenticator.codeLength
             self.continueButton.isEnabled = isComplete
             if !isComplete {
                 self.feedbackView.isHidden = true
@@ -267,11 +266,11 @@ final class CodeAuthViewController: UIViewController {
      */
     private func handleCode(_ codeValue: CodeValue) {
         switch codeValue {
-        case .invalid:
+        case .notRecognized:
             let attributedText = NSAttributedString(string: LocalizedString(codeValue.descriptionKey), attributes: feedbackTextAttributes as [NSAttributedString.Key:Any])
             feedbackTextView.attributedText = attributedText
             feedbackView.isHidden = false
-        case .fullProgram:
+        case .full:
             let message = LocalizedString(codeValue.descriptionKey)
             let supportEmail = LocalizedString("support_email")
             let supportMessage = message + supportEmail
