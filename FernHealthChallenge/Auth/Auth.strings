@@ -1,0 +1,17 @@
+/* 
+  Auth.strings
+  FernHealthChallenge
+
+  Created by Arturo Reyes on 6/20/20.
+  Copyright © 2020 Arturo Reyes. All rights reserved.
+*/
+
+"title" = "Getting Started";
+"prompt" = "Please enter in the 6 digit code provided by your employer.";
+"invalid_code_message" = "Code not recognized. Please try again.";
+"full_program_message" = "Thanks for your interest! The program at your company is full at this time, but we'll let you know if more spots open up. If you have more questions please feel free to contact us at ";
+"continue" = "Continue";
+"support_email" = "support@fernhealth.com";
+"alphanumeric_message" = "The code should only contain alphanumeric values.";
+"feedback_title" = "Thanks for the\nfeedback!";
+"feedback_message" = "Remember, people who do their exercises at least 5 times a week report having less pain.";

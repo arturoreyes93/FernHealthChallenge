@@ -7,26 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD3E3B3624A282B700FF6949 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E3B3524A282B700FF6949 /* Network.swift */; };
+		DD3E3B3924A29BDE00FF6949 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E3B3824A29BDE00FF6949 /* JSONEncoder.swift */; };
+		DD3E3B3B24A2D65D00FF6949 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E3B3A24A2D65D00FF6949 /* ActivityIndicatorView.swift */; };
+		DD3E3B3D24A2DADE00FF6949 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E3B3C24A2DADE00FF6949 /* UIColor+Extensions.swift */; };
+		DDDBE8F624A385B10065374F /* FernHealthChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBE8F524A385B10065374F /* FernHealthChallengeTests.swift */; };
+		DDDBE8FE24A3A25E0065374F /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDBE8FD24A3A25E0065374F /* URLProtocolMock.swift */; };
 		DDFBB28E249D360000756966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB28D249D360000756966 /* AppDelegate.swift */; };
 		DDFBB290249D360000756966 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB28F249D360000756966 /* SceneDelegate.swift */; };
-		DDFBB292249D360000756966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB291249D360000756966 /* ViewController.swift */; };
+		DDFBB292249D360000756966 /* CodeAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB291249D360000756966 /* CodeAuthViewController.swift */; };
 		DDFBB295249D360000756966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFBB293249D360000756966 /* Main.storyboard */; };
 		DDFBB297249D360400756966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFBB296249D360400756966 /* Assets.xcassets */; };
 		DDFBB29A249D360400756966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFBB298249D360400756966 /* LaunchScreen.storyboard */; };
+		DDFBB2A2249D36F200756966 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2A1249D36F200756966 /* AppCoordinator.swift */; };
+		DDFBB2A4249D371700756966 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2A3249D371700756966 /* Coordinator.swift */; };
+		DDFBB2A6249D37AC00756966 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2A5249D37AC00756966 /* AuthCoordinator.swift */; };
+		DDFBB2AA249D3DD500756966 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2A9249D3DD500756966 /* UINavigationController+Extensions.swift */; };
+		DDFBB2AC249D49A000756966 /* CodeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2AB249D49A000756966 /* CodeStackView.swift */; };
+		DDFBB2AE249E552700756966 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2AD249E552700756966 /* Localization.swift */; };
+		DDFBB2B0249E55D100756966 /* Auth.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDFBB2AF249E55D100756966 /* Auth.strings */; };
+		DDFBB2B2249E5EA400756966 /* CodeAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2B1249E5EA400756966 /* CodeAuthenticator.swift */; };
+		DDFBB2B4249E61BD00756966 /* CodeAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2B3249E61BD00756966 /* CodeAuthViewModel.swift */; };
+		DDFBB2B6249EA90300756966 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBB2B5249EA90300756966 /* FeedbackViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DDDBE8F824A385B10065374F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDFBB282249D360000756966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDFBB289249D360000756966;
+			remoteInfo = FernHealthChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		DD3E3B3524A282B700FF6949 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DD3E3B3824A29BDE00FF6949 /* JSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoder.swift; sourceTree = "<group>"; };
+		DD3E3B3A24A2D65D00FF6949 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		DD3E3B3C24A2DADE00FF6949 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		DDDBE8F324A385B10065374F /* FernHealthChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FernHealthChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDBE8F524A385B10065374F /* FernHealthChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FernHealthChallengeTests.swift; sourceTree = "<group>"; };
+		DDDBE8F724A385B10065374F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDBE8FD24A3A25E0065374F /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		DDFBB28A249D360000756966 /* FernHealthChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FernHealthChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFBB28D249D360000756966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFBB28F249D360000756966 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDFBB291249D360000756966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDFBB291249D360000756966 /* CodeAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAuthViewController.swift; sourceTree = "<group>"; };
 		DDFBB294249D360000756966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDFBB296249D360400756966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDFBB299249D360400756966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDFBB29B249D360400756966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFBB2A1249D36F200756966 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DDFBB2A3249D371700756966 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DDFBB2A5249D37AC00756966 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		DDFBB2A9249D3DD500756966 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		DDFBB2AB249D49A000756966 /* CodeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeStackView.swift; sourceTree = "<group>"; };
+		DDFBB2AD249E552700756966 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		DDFBB2AF249E55D100756966 /* Auth.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Auth.strings; sourceTree = "<group>"; };
+		DDFBB2B1249E5EA400756966 /* CodeAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAuthenticator.swift; sourceTree = "<group>"; };
+		DDFBB2B3249E61BD00756966 /* CodeAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAuthViewModel.swift; sourceTree = "<group>"; };
+		DDFBB2B5249EA90300756966 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DDDBE8F024A385B10065374F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDFBB287249D360000756966 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +88,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0AC1FA24A380630003A12A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDFBB291249D360000756966 /* CodeAuthViewController.swift */,
+				DDFBB2B5249EA90300756966 /* FeedbackViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD0AC1FB24A380880003A12A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DDFBB2B3249E61BD00756966 /* CodeAuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DD0AC1FC24A380A70003A12A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E3B3A24A2D65D00FF6949 /* ActivityIndicatorView.swift */,
+				DDFBB2AB249D49A000756966 /* CodeStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD3E3B3724A282BF00FF6949 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD3E3B3524A282B700FF6949 /* Network.swift */,
+				DD3E3B3824A29BDE00FF6949 /* JSONEncoder.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DDDBE8F424A385B10065374F /* FernHealthChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBE8F524A385B10065374F /* FernHealthChallengeTests.swift */,
+				DDDBE8F724A385B10065374F /* Info.plist */,
+				DDDBE8FD24A3A25E0065374F /* URLProtocolMock.swift */,
+			);
+			path = FernHealthChallengeTests;
+			sourceTree = "<group>";
+		};
 		DDFBB281249D360000756966 = {
 			isa = PBXGroup;
 			children = (
 				DDFBB28C249D360000756966 /* FernHealthChallenge */,
+				DDDBE8F424A385B10065374F /* FernHealthChallengeTests */,
 				DDFBB28B249D360000756966 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DDFBB28A249D360000756966 /* FernHealthChallenge.app */,
+				DDDBE8F324A385B10065374F /* FernHealthChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,20 +154,73 @@
 		DDFBB28C249D360000756966 /* FernHealthChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				DDFBB28D249D360000756966 /* AppDelegate.swift */,
-				DDFBB28F249D360000756966 /* SceneDelegate.swift */,
-				DDFBB291249D360000756966 /* ViewController.swift */,
-				DDFBB293249D360000756966 /* Main.storyboard */,
-				DDFBB296249D360400756966 /* Assets.xcassets */,
-				DDFBB298249D360400756966 /* LaunchScreen.storyboard */,
-				DDFBB29B249D360400756966 /* Info.plist */,
+				DDFBB2B8249FC8D600756966 /* Application */,
+				DD3E3B3724A282BF00FF6949 /* Network */,
+				DDFBB2BA249FC90C00756966 /* Auth */,
+				DDFBB2A9249D3DD500756966 /* UINavigationController+Extensions.swift */,
+				DD3E3B3C24A2DADE00FF6949 /* UIColor+Extensions.swift */,
+				DDFBB2AD249E552700756966 /* Localization.swift */,
+				DDFBB2B9249FC8EA00756966 /* Resources */,
 			);
 			path = FernHealthChallenge;
+			sourceTree = "<group>";
+		};
+		DDFBB2B8249FC8D600756966 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DDFBB2A3249D371700756966 /* Coordinator.swift */,
+				DDFBB2A1249D36F200756966 /* AppCoordinator.swift */,
+				DDFBB28D249D360000756966 /* AppDelegate.swift */,
+				DDFBB28F249D360000756966 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DDFBB2B9249FC8EA00756966 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDFBB293249D360000756966 /* Main.storyboard */,
+				DDFBB298249D360400756966 /* LaunchScreen.storyboard */,
+				DDFBB29B249D360400756966 /* Info.plist */,
+				DDFBB296249D360400756966 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDFBB2BA249FC90C00756966 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DDFBB2A5249D37AC00756966 /* AuthCoordinator.swift */,
+				DDFBB2B1249E5EA400756966 /* CodeAuthenticator.swift */,
+				DD0AC1FA24A380630003A12A /* ViewControllers */,
+				DD0AC1FB24A380880003A12A /* ViewModels */,
+				DD0AC1FC24A380A70003A12A /* Views */,
+				DDFBB2AF249E55D100756966 /* Auth.strings */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DDDBE8F224A385B10065374F /* FernHealthChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDBE8FA24A385B10065374F /* Build configuration list for PBXNativeTarget "FernHealthChallengeTests" */;
+			buildPhases = (
+				DDDBE8EF24A385B10065374F /* Sources */,
+				DDDBE8F024A385B10065374F /* Frameworks */,
+				DDDBE8F124A385B10065374F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDDBE8F924A385B10065374F /* PBXTargetDependency */,
+			);
+			name = FernHealthChallengeTests;
+			productName = FernHealthChallengeTests;
+			productReference = DDDBE8F324A385B10065374F /* FernHealthChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DDFBB289249D360000756966 /* FernHealthChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDFBB29E249D360400756966 /* Build configuration list for PBXNativeTarget "FernHealthChallenge" */;
@@ -97,6 +248,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Arturo Reyes";
 				TargetAttributes = {
+					DDDBE8F224A385B10065374F = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = DDFBB289249D360000756966;
+					};
 					DDFBB289249D360000756966 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -116,17 +271,26 @@
 			projectRoot = "";
 			targets = (
 				DDFBB289249D360000756966 /* FernHealthChallenge */,
+				DDDBE8F224A385B10065374F /* FernHealthChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DDDBE8F124A385B10065374F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDFBB288249D360000756966 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DDFBB29A249D360400756966 /* LaunchScreen.storyboard in Resources */,
 				DDFBB297249D360400756966 /* Assets.xcassets in Resources */,
+				DDFBB2B0249E55D100756966 /* Auth.strings in Resources */,
 				DDFBB295249D360000756966 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,17 +298,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DDDBE8EF24A385B10065374F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDBE8F624A385B10065374F /* FernHealthChallengeTests.swift in Sources */,
+				DDDBE8FE24A3A25E0065374F /* URLProtocolMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDFBB286249D360000756966 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFBB292249D360000756966 /* ViewController.swift in Sources */,
+				DDFBB2A2249D36F200756966 /* AppCoordinator.swift in Sources */,
+				DDFBB2AC249D49A000756966 /* CodeStackView.swift in Sources */,
+				DDFBB292249D360000756966 /* CodeAuthViewController.swift in Sources */,
+				DDFBB2A4249D371700756966 /* Coordinator.swift in Sources */,
 				DDFBB28E249D360000756966 /* AppDelegate.swift in Sources */,
+				DDFBB2A6249D37AC00756966 /* AuthCoordinator.swift in Sources */,
+				DDFBB2AE249E552700756966 /* Localization.swift in Sources */,
+				DDFBB2B4249E61BD00756966 /* CodeAuthViewModel.swift in Sources */,
+				DDFBB2B2249E5EA400756966 /* CodeAuthenticator.swift in Sources */,
+				DD3E3B3924A29BDE00FF6949 /* JSONEncoder.swift in Sources */,
+				DDFBB2B6249EA90300756966 /* FeedbackViewController.swift in Sources */,
+				DD3E3B3B24A2D65D00FF6949 /* ActivityIndicatorView.swift in Sources */,
 				DDFBB290249D360000756966 /* SceneDelegate.swift in Sources */,
+				DD3E3B3624A282B700FF6949 /* Network.swift in Sources */,
+				DD3E3B3D24A2DADE00FF6949 /* UIColor+Extensions.swift in Sources */,
+				DDFBB2AA249D3DD500756966 /* UINavigationController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDDBE8F924A385B10065374F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDFBB289249D360000756966 /* FernHealthChallenge */;
+			targetProxy = DDDBE8F824A385B10065374F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DDFBB293249D360000756966 /* Main.storyboard */ = {
@@ -166,6 +360,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DDDBE8FB24A385B10065374F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z763XW3ZMH;
+				INFOPLIST_FILE = FernHealthChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arturoreyes.FernHealthChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FernHealthChallenge.app/FernHealthChallenge";
+			};
+			name = Debug;
+		};
+		DDDBE8FC24A385B10065374F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z763XW3ZMH;
+				INFOPLIST_FILE = FernHealthChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arturoreyes.FernHealthChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FernHealthChallenge.app/FernHealthChallenge";
+			};
+			name = Release;
+		};
 		DDFBB29C249D360400756966 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -216,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z763XW3ZMH;
-				INFOPLIST_FILE = FernHealthChallenge/Info.plist;
+				INFOPLIST_FILE = FernHealthChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = arturoreyes.FernHealthChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z763XW3ZMH;
-				INFOPLIST_FILE = FernHealthChallenge/Info.plist;
+				INFOPLIST_FILE = FernHealthChallenge/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,13 +548,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = arturoreyes.FernHealthChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DDDBE8FA24A385B10065374F /* Build configuration list for PBXNativeTarget "FernHealthChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDBE8FB24A385B10065374F /* Debug */,
+				DDDBE8FC24A385B10065374F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDFBB285249D360000756966 /* Build configuration list for PBXProject "FernHealthChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
